@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edittext_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Background color of the EditText -->
+    <solid android:color="#FFFFFF" />
+    <!-- Bottom line color and height -->
+    <stroke
+        android:width="2dp"
+    android:color="#FF0000" />
+</shape>

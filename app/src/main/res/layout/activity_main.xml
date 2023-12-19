@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_screen"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/hajj_Guide"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="248dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/ummrah_Guide"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ummrah_Guide"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/hajj_Guide"
+        app:layout_constraintEnd_toStartOf="@+id/miqat"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/hajj_Guide"
+        app:layout_constraintTop_toTopOf="@+id/hajj_Guide" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/miqat"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/ummrah_Guide"
+        app:layout_constraintEnd_toStartOf="@+id/miqat_m"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ummrah_Guide"
+        app:layout_constraintTop_toTopOf="@+id/ummrah_Guide" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/miqat_m"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/miqat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/miqat"
+        app:layout_constraintTop_toTopOf="@+id/miqat" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/qibla_Guide"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="32dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/dua_Guide"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/hajj_Guide"
+        app:layout_constraintTop_toBottomOf="@+id/hajj_Guide" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dua_Guide"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="35dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/qibla_Guide"
+        app:layout_constraintEnd_toStartOf="@+id/quran_Guide"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/qibla_Guide"
+        app:layout_constraintTop_toTopOf="@+id/qibla_Guide" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/quran_Guide"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="33dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/dua_Guide"
+        app:layout_constraintEnd_toStartOf="@+id/allah_names"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dua_Guide"
+        app:layout_constraintTop_toTopOf="@+id/dua_Guide" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/allah_names"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="33dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/quran_Guide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/quran_Guide"
+        app:layout_constraintTop_toTopOf="@+id/quran_Guide" />
+</androidx.constraintlayout.widget.ConstraintLayout>
